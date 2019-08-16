@@ -1,0 +1,10 @@
+#!/bin/bash
+sudo echo -e "\e[36m\e[5mIPV4 connections"
+echo -e "\e[0m"
+sudo netstat -aWp -4
+echo -e "\e[36m\e[5mIPV6 connections"
+echo -e "\e[0m"
+sudo netstat -aWp -6
+echo -e "\e[36m\e[5mListening daemons"
+echo -e "\e[0m"
+sudo netstat -tlnp
